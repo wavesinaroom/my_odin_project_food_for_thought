@@ -1,0 +1,6 @@
+# VIM
+*.swo
+*.swap
+
+#Virtual Environment
+/fft
