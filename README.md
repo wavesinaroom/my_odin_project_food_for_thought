@@ -14,7 +14,7 @@ Food for thought is a web application that lets you plan meals and activities fo
 
 The project is organized in two apps that are connected together. App one stores unlocked meal search categories and activities whereas app two stores planned days with meals and activities. Questions, search caterories and activities are fetched from external APIs with asynchronous methods called from views. User must login to get access to their saved data.
 
-# Tachnologies
+# Technologies
 
 ## Programming language
 
