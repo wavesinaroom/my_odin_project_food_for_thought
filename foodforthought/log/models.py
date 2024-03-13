@@ -6,17 +6,17 @@ class Log(models.Model):
    recipe_categories = models.JSONField();
    activities = models.JSONField();
 
-    class Meta:
-        abstract = True
+class Meta:
+    abstract = True
 
-    def save(self, *args, **kwargs)
-        self.__class__.objects.exclude(id=self.id).delete()
-        super(Log, self).save(*args, **kwargs)
+def save(self, *args, **kwargs):
+    self.__class__.objects.exclude(id=self.id).delete()
+    super(Log, self).save(*args, **kwargs)
 
-    @classmethod
-    def load(cls):
-        try:
-            return cls.objects.get()
-        except cls.DoesNotExist:
-            return cls()
+@classmethod
+def load(cls):
+    try:
+        return cls.objects.get()
+    except cls.DoesNotExist:
+        return cls()
 
