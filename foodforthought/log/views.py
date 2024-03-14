@@ -4,15 +4,21 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def fetch_trivia_question():
-    logger.warning("NOT IMPLEMENTED: fetch_trivia_question")
+def choose_level(request):
+    return HttpResponse("NOT IMPLEMENTED: choose_level")
 
-def check_answer():
-    logger.warning("NOT IMPLEMENTED: check_answer")
+def show_question(request):
+    return HttpResponse("NOT IMPLEMENTED: question")
 
-def check_reward_choice():
-    logger.warning("NOT IMPLEMENTED: check_reward_choice")
+def notify_success(request):
+    return HttpResponse("NOT IMPLEMENTED: success")
 
-def award_activity():
-    logger.warning("NOT IMPLEMENTED: award_activity")
+def notify_failure(request):
+    return HttpResponse("NOT IMPLEMENTED: failure")
+
+def choose_reward(request):
+    return HttpResponse("NOT IMPLEMENTED: choose_reward")
+
+def redirect_to_journal(request):
+    return HttpResponse("NOT IMPLEMENTED: to_journal")
 
