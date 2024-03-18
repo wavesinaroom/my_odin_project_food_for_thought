@@ -1,6 +1,7 @@
 # VIM
 *.swo
 *.swap
+*.vim
 
 #Virtual Environment
 /venv
