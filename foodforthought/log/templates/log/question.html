@@ -4,7 +4,15 @@
     <title>Question</title>
   </head>
   <body>
-    <p>This is a question</p>
-    <p>{{type}}</p>
+    <h3>{{notification}}</h3>
+    { %if question% } 
+
+    { %else% }
+    <form action="" method="post">
+      { % csrf_token % }
+      {{ form }} 
+      <input type="submit" value="level">
+    </form>
+    { %endif% }
   </body>
 </html>
